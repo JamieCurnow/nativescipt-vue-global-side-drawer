@@ -1,13 +1,9 @@
 import Vue from 'nativescript-vue'
-import VueDevtools from 'nativescript-vue-devtools'
 import routes from '~/router'
 import store from '~/store'
 import sideDrawer from '~/components/sideDrawer'
 import drawerContent from '~/components/drawerContent'
 
-if(TNS_ENV !== 'production') {
-  Vue.use(VueDevtools)
-}
 // Prints Vue logs when --env.production is *NOT* set while building
 Vue.config.silent = (TNS_ENV === 'production')
 
